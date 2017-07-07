@@ -6,12 +6,15 @@
       </div>
       <div class="post-meta">
          <span><?php the_time( 'M d, Y' ); ?> in</span>
-         <span><a href="#">Illustration</a></span>
+         <span><?php the_category( ', ' ); ?> by</span>
+         <span><?php the_author_link(); ?></span>
       </div>
    </div>
    <div class="fet-image">
       <a href="<?php echo esc_url( get_the_permalink() ); ?>">
-         <img src="assets/images/blog-1.jpg" alt="">
+         <?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail();
+         } ?>
       </a>
    </div>
    <div class="entry-excerpt">
