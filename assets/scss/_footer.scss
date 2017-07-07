@@ -1,0 +1,97 @@
+.footer{ 
+	padding:40px 0; 
+	text-align:center;
+	background-color: $color_scheme;
+	a{
+		color: #FFFFFF;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.copyright{
+		font-size: 12px;
+		color: #ddd;
+		span{
+			color: tomato;
+			margin: 0 5px;
+		}
+	}
+}
+.follow-me {
+    padding: 25px 0;
+	h2 {
+	    font-size: 40px;
+	    font-weight: 300;
+	    @media (max-width: 514px){
+	    	font-size: 35px;
+	    }
+	}
+}
+/**
+ * Footer social icons
+ */
+
+.footer-social-icons{
+    list-style: none;
+    padding: 35px 0;
+    text-align: center;
+    border-top: 0;
+    li{
+	    display: inline-block;
+	    margin-right: 35px;
+	    @media (max-width: 514px){
+	    	margin-right: 3px;
+	    }
+    }
+    i{
+	    font-size: 22px;
+	    -webkit-transition: all 0.25s ease-in-out;
+	    transition: all 0.25s ease-in-out;
+	    width: 42px;
+	    height: 42px;
+	    border-radius: 50%;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+    }
+    a{
+    	color: #FFFFFF;
+    	&:hover{
+    		text-decoration: none;
+    		color: #a29595;
+    	}
+    }
+}
+
+
+/**
+ * Footer insta section
+ */
+
+.singleInst{
+    float: left;
+    width: 12.5%;
+    overflow: hidden;
+	img{
+	    -webkit-transition: all 500ms ease;
+	    -moz-transition: all 500ms ease;
+	    -ms-transition: all 500ms ease;
+	    -o-transition: all 500ms ease;
+	    transition: all 500ms ease;
+	    width: 100%;
+	    &:hover{
+		    transform: scale(1.06);
+		    opacity: .7;
+	    }
+	}
+}

@@ -1,0 +1,65 @@
+/*===============  Small Featured Boxes ===================*/
+.featured-posts {
+    margin-top: 80px;
+}
+.featured-post {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    img {
+        height: 235px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.25s ease-in-out;
+        box-shadow: 0 0 5px #999;
+        opacity: .7;
+
+    -o-object-fit: cover;
+    object-fit: cover;
+    }
+    &:hover{
+        .featured-post-title{
+            a{
+                color: $color-scheme;
+            }
+        }
+        img{
+            opacity: 1;
+        }
+    }
+}
+
+.featured-post-title a {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #111;
+    margin-top: 5px;
+    display: inline-block;
+    word-spacing: 1.6px;
+    letter-spacing: 0.2px;
+}
+
+.post-date {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #969696;
+    display: block;
+}
+
+
+@media (max-width: 991px){
+    .featured-post img, .mini-post img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 600px){
+    .featured-post img, .mini-post img {
+        width: 95%;
+    }
+}

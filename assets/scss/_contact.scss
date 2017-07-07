@@ -1,0 +1,36 @@
+.my-photo{
+	img{
+		margin-top: 75px;
+	}
+}
+
+// Contact form
+
+
+.contact-form{
+	margin-top: 45px;
+	input , textarea{
+	    border: 1px solid #DDD;
+	    width: 100%;
+	    padding: 7px 15px;
+	    margin: 12px 0;
+	}
+	[type="submit"]{
+		transition: .5s;
+
+	    background: $color-scheme;
+	    border: none;
+	    color: #fff;
+	    padding: 9px 13px;
+	    font-size: 16px;
+	    font-weight: 700;
+	    display: inline-block;
+	    width: 152px;
+	    float: left;
+	    clear: both;
+	    border-radius: 3px;
+	    &:hover{
+	    	opacity: .8;
+	    }
+	}
+}

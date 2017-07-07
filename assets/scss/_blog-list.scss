@@ -1,0 +1,269 @@
+.single-post{
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 45px;
+	padding-top: 15px;
+	margin: 10px 0;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+.blog-title-and-meta{
+	margin: 28px 0;
+	.post-title{
+		h3{
+			font-weight: 400;
+			font-style: normal;
+			font-size: 35px;
+			font-family: 'Open Sans Condensed', sans-serif;
+			text-transform: uppercase;
+		}
+	}
+}
+.entry-excerpt , .entry-content , .profile-content{
+	p {
+	    color: #595959;
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+}
+.my-photo{
+	margin-bottom: 35px;
+}
+.entry-content{
+	img{
+		margin: 15px 0;
+	}
+}
+.fet-image{
+	margin: 35px 0;
+	border-radius: 15px;
+	overflow: hidden;
+
+	img{transition: all 300ms ease-in-out;}
+
+	&:hover{
+		img{
+			transform: scale(1.1);
+			opacity: .9;
+		}
+	}
+
+
+}
+a.read-more {
+    border: 2px solid $color_scheme;
+    padding: 8px 16px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 700;
+    background-color: #fff;
+    &:hover{
+    	color: #fff;
+    	background-color: $color_scheme;
+    }
+}
+
+
+/**
+ * Pagination
+ */
+.paginationIn {
+    padding-bottom: 31px;
+    padding-top: 43px;
+    position: relative;
+	span , a {
+	    border: 1px solid #d7d7d7;
+	    padding:8px 0px;
+	    color: #676666;
+	    font-size: 14px;
+	    width: 31px;
+	    height: 31px;
+	    text-align: center;
+	    line-height: .8;
+	    float: left;
+	    margin-right: 5px;
+	}
+	span.current , a:hover{
+	    background: $color_scheme;
+	    color: #fff;
+	    border-color: $color_scheme;
+	}
+}
+
+.paginationIn .dottedPagi {
+    border: medium none;
+    margin-left: 0;
+    margin-right: 6px;
+}
+.paginationIn .next {
+    font-size: 11px;
+    line-height: 0.8;
+    padding: 10px 0;
+}
+
+
+/**
+ * Single post
+ */
+
+.single-recent-posts {
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin: 45px 0;
+}
+.single-recent-posts .recent-post {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.single-recent-posts .recent-post:last-child {
+    float: right;
+}
+
+.single-recent-posts .recent-post img {
+    height: 53px;
+    width: 53px;
+    float: left;
+    margin-right: 10px;
+}
+
+.single-recent-posts .recent-post h4 {
+	margin-top: 0;
+}
+.single-recent-posts .recent-post h4 a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.single-recent-posts .recent-post p {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    word-spacing: 1.4px;
+    line-height: 16px;
+    margin-top: 2px;
+}
+
+
+.prev-next span a {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    word-spacing: 1.8px;
+    letter-spacing: 1.2px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.prev-next {
+    margin-top: 18px;
+}
+
+.prev-next span a:hover {
+    color: #333;
+}
+
+.prev-next span:last-child a {
+    float: right;
+}
+
+
+
+/**
+ * Comment form
+ */
+
+.post-comments {
+    margin-top: 80px;
+}
+
+.post-comment {
+    display: block;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.post-comment img {
+    height: 68px;
+    width: 68px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    border-right: 2px solid $color_scheme;
+}
+
+.post-comment h4 a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.post-comment p {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    word-spacing: 1.6px;
+    line-height: 18px;
+    margin-top: 8px;
+}
+.post-comment:first-child {
+    margin-bottom: 30px;
+}
+
+.post-comment:nth-last-child(2) {
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.post-comment:nth-last-child(3) {
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.post-comment .post-date {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+
+/**
+ * Comment form
+ */
+
+.new-comment-post{
+	h4{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 22px;
+	}
+	input , textarea{
+	    border: 1px solid #ddd;
+	    width: 100%;
+	    padding: 10px;
+	}
+	textarea{
+		margin-top: 20px;
+	}
+	button{
+	    background: $color_scheme;
+	    border: none;
+	    font-size: 22px;
+	    padding: 5px 12px;
+	    margin-top: 15px;
+	    color: #fff;
+	    font-family: 'Open Sans Condensed', sans-serif;
+	    font-style: normal;
+	    font-weight: 700;
+	    transition: .2s;
+	    text-transform: uppercase;
+	    &:hover{
+	    	background-color: #C7C7C7;
+	    }
+	}
+}

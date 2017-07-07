@@ -1,0 +1,37 @@
+/*=============== 404 Error Page ===================*/
+
+.error-page-content {
+    padding: 80px 0 130px;
+}
+
+.error {
+    font-size: 140px;
+    text-align: center;
+    margin: 10px 0 5px;
+    color: #111;
+}
+
+.error-title {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    word-spacing: 5px;
+    font-size: 40px;
+    color: #111;
+}
+
+.go-home {
+    display: block;
+    text-align: center;
+    margin: 50px 0 40px;
+}
+
+
+.go-home a {
+    @extend a.read-more;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 11px 18px;
+}
