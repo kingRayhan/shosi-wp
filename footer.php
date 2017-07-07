@@ -17,50 +17,14 @@
 	       <div class="follow-me text-center">
 	          <h2>Follow Me On #king_rayhan</h2>
 	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/1.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/2.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/3.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/4.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/5.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/6.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/7.jpg" alt="">
-	          </a>
-	       </div>
-	       <div class="singleInst">
-	          <a href="#">
-	          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram/8.jpg" alt="">
-	          </a>
-	       </div>
+	       <div id="instafeed"></div>
 	       <div class="clearfix"></div>
 	    </div>
 	 </div>
 	</section>
+
+
+
 	<footer id="colophon" class="footer site-footer">
          <div class="container">
             <div class="row">

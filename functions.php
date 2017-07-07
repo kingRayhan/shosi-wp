@@ -134,6 +134,7 @@ function wp_shosi_scripts() {
 	 */
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery') , '3.3.7', true );
 	wp_enqueue_script( 'meanmenu', get_template_directory_uri() . '/assets/js/jquery.meanmenu.js', array('jquery') , '3.3.7', true );
+	wp_enqueue_script( 'instafeed', get_template_directory_uri() . '/assets/js/instafeed.js', array() , '1.9.3', true );
 	wp_enqueue_script( 'shosi-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery') , '1.0.0', true );
 
 
