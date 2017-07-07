@@ -167,13 +167,13 @@ header {
  * ===========================================
  */
 /*=========== 2.1 Blog List ===========*/
-.single-post {
+article.single-post {
   font-family: 'Open Sans', sans-serif;
   border-bottom: 1px solid #ddd;
   padding-bottom: 45px;
   padding-top: 15px;
   margin: 10px 0; }
-  .single-post:last-child {
+  article.single-post:last-child {
     border-bottom: none; }
 
 .blog-title-and-meta {
