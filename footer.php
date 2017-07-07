@@ -8,10 +8,8 @@
  *
  * @package SHOSI_-_Elegant_Blog_Theme
  */
-
 ?>
 	</div><!-- #content // started in header.php-->
-
 
 	<section class="instagramPhoto">
 	 <div class="container-fluid">
@@ -63,8 +61,6 @@
 	    </div>
 	 </div>
 	</section>
-
-
 	<footer id="colophon" class="footer site-footer">
          <div class="container">
             <div class="row">
