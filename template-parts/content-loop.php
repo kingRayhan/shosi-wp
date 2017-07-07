@@ -11,11 +11,11 @@
       </div>
    </div>
    <div class="fet-image">
-      <a href="<?php echo esc_url( get_the_permalink() ); ?>">
-         <?php if ( has_post_thumbnail() ) {
-            the_post_thumbnail();
-         } ?>
-      </a>
+         <?php if ( has_post_thumbnail() ) : ?>
+            <a href="<?php echo esc_url( get_the_permalink() ); ?>">
+               <?php the_post_thumbnail(); ?>
+            </a>
+       <?php  endif; ?>
    </div>
    <div class="entry-excerpt">
       <p> <?php echo wp_trim_words( get_the_content() , 35 ); ?> </p>
