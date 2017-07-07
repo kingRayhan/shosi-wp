@@ -15,7 +15,7 @@
             <a href="<?php echo esc_url( get_the_permalink() ); ?>">
                <?php the_post_thumbnail(); ?>
             </a>
-       <?php  endif; ?>
+         <?php  endif; ?>
    </div>
    <div class="entry-excerpt">
       <p> <?php echo wp_trim_words( get_the_content() , 35 ); ?> </p>

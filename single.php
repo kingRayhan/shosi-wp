@@ -9,27 +9,58 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	
 
-		<?php
-		while ( have_posts() ) : the_post();
+		<!--==========================================================-->
+      <!-- Page Content area start -->
+      <!--==========================================================-->
+      <section class="page-content">
+        <div class="container">
+            <div class="row">
+	                <div class="col-md-8">
+		               	<div class="single-page-content">
+		                	<!--=========== Title and meta ===========-->
+		                	<div class="blog-title-and-meta text-center">
+		                        <div class="post-title">
+		                           <h3><?php the_title();?></h3>
+		                        </div>
+		                        <div class="post-meta">
+		                           <span><?php the_time( 'F j Y' ); ?>  in </span>
+		                           <span><a href="#"><?php the_category( ', ' ); ?></a> by </span>
+		                           <span><?php the_author_link(); ?></span>
+		                        </div>
+		                    </div>
+		                    <!-- .blog-title-and-meta -->
+			               <?php
+			               if ( have_posts() ) :
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			                  /* Start the Loop */
+			                  while ( have_posts() ) : the_post();
 
-			the_post_navigation();
+			                     get_template_part( 'template-parts/content', 'single' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			                  endwhile;
 
-		endwhile; // End of the loop.
-		?>
+			                  the_posts_navigation();
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			               else :
 
-<?php
-get_sidebar();
-get_footer();
+			                  get_template_part( 'template-parts/content', 'none' );
+
+			               endif; ?>
+		                  
+		                </div>
+	            </div>
+                <div class="col-md-4">
+                   <?php get_sidebar('right'); ?>    
+                </div>
+            </div>
+        </div>
+      </section><!-- page-content END -->
+      <!--==========================================================-->
+      <!-- Page Content area End -->
+      <!--==========================================================-->
+
+	
+
+<?php get_footer(); ?>
