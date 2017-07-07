@@ -77,4 +77,3 @@
          <!-- Mobile Menu end -->
          <!--==========================================================-->
       </header>
-	  <?php echo get_template_part( 'template-parts/featured-posts' ); ?>

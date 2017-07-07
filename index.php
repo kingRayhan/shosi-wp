@@ -1,3 +1,4 @@
+<?php echo get_template_part( 'template-parts/featured-posts' ); ?>
 <?php get_header(); ?>
       <!--==========================================================-->
       <!-- Page Content area start -->
