@@ -135,7 +135,7 @@ function wp_shosi_scripts() {
 	 */
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery') , '3.3.7', true );
 	wp_enqueue_script( 'meanmenu', get_template_directory_uri() . '/assets/js/jquery.meanmenu.js', array('jquery') , '3.3.7', true );
-	wp_enqueue_script( 'instafeed', get_template_directory_uri() . '/assets/js/instafeed.js', array() , '1.9.3', true );
+	wp_enqueue_script( 'instafeed', get_template_directory_uri() . '/assets/js/instafeed.js', array() , '1.9.3', false );
 	wp_enqueue_script( 'shosi-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery') , '1.0.0', true );
 
 
@@ -144,6 +144,27 @@ function wp_shosi_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_shosi_scripts' );
+
+
+
+function instafeed_activation(){ ?>
+
+<script>
+//2286603943.89ebb40.4b20ded3bf0742c88bb5106bf7c4db24
+	var feed = new Instafeed({
+		get: 'user',
+		userId: <?php echo get_theme_mod('insta_user_id'); ?>,
+		accessToken: <?php echo get_theme_mod('insta_client_id'); ?>,
+		template: '<div class="singleInst"><a target="_blank" href="{{link}}"><img src="{{image}}" alt=""></a></div>',
+		limit: 8
+	 });
+	feed.run();
+</script>
+
+
+<?php }
+add_action('wp_footer','instafeed_activation');
+
 
 /**
  * Implement the Custom Header feature.
