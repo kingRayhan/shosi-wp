@@ -7,7 +7,7 @@
  * @package SHOSI_-_Elegant_Blog_Theme
  */
 get_header(); ?>
-	  <header class="page-header">
+	  <div class="page-header">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -18,7 +18,7 @@ get_header(); ?>
 					</div>
 				</div>
 		   </div>
-	  </header><!-- .page-header -->
+	  </div><!-- .page-header -->
       <!--==========================================================-->
       <!-- Page Content area start -->
       <!--==========================================================-->
