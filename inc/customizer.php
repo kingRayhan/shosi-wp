@@ -105,7 +105,7 @@ function wp_shosi_customize_register( $wp_customize ) {
 		"transport" => "refresh"
 	));
 	$wp_customize->add_control('insta_client_id',array(
-		'label' => __('Client Id','cleanblog'),
+		'label' => __('Access Token','cleanblog'),
 		'type'  => 'text',
 		'section' => 'insta_config'
 	));
@@ -126,7 +126,7 @@ function wp_shosi_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_setting('footer_copyright',array(
-		"default" => "CleanBlog Wordpress theme by <a href='//rayhan.info' target='_blank'>@KingRayhan</a>",
+		"default" => esc_html__( '© Copyright '.date('Y').' - <b>SHOSi</b> - Clean html blog Template. Designed by <span><i class="fa fa-heart"></i></span> <b><a href="//electronthemes.xyz" target="_blank">ElectronThemes</a></b>' , 'wp_shosi' ),
 		"transport" => "refresh"
 	));
 	$wp_customize->add_control('footer_copyright',array(
