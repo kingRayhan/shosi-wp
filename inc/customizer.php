@@ -76,6 +76,19 @@ function wp_shosi_customize_register( $wp_customize ) {
 	));
 
 
+	$wp_customize->add_setting('insta_section_title',array(
+		"default" => "Follow Me On #king_rayhan",
+		"transport" => "refresh"
+	));
+	$wp_customize->add_control('insta_section_title',array(
+		'label' => __('Section Title','cleanblog'),
+		'type'  => 'text',
+		'section' => 'insta_config'
+	));
+
+
+
+
 	$wp_customize->add_setting('insta_user_id',array(
 		//"default" => "CleanBlog Wordpress theme by <a href='//rayhan.info' target='_blank'>@KingRayhan</a>",
 		"transport" => "refresh"

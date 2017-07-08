@@ -15,7 +15,7 @@
 	 <div class="container-fluid">
 	    <div class="row">
 	       <div class="follow-me text-center">
-	          <h2>Follow Me On #king_rayhan</h2>
+	          <h2><?php echo get_theme_mod('insta_section_title'); ?></h2>
 	       </div>
 	       <div id="instafeed"></div>
 	       <div class="clearfix"></div>
